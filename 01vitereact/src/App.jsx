@@ -16,10 +16,15 @@ function App() {
     <>
      <h1> hello world </h1>
      <h2> count value is : {count} </h2>
-      <button onClick={addvalue}> increase </button>
-      <br/>
+     <div 
+     style={{display: 'flex',
+     gap: '10px', 
+     justifyContent: 'center',
+     alignItems: 'center'}}
+     >
+     <button onClick={addvalue}> increase </button>
       <button onClick={subvalue}> decrease </button>
-      <p> footer : {counter}</p>
+     </div>
     </>
   )
 }
